@@ -1,0 +1,70 @@
+<template name="layout">
+  <div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- <a class="navbar-brand" href="{{pathFor 'caselist'}}"><img class="mainlogo" src="/images/logo.png" /></a> -->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+            {{> yield region="topnav"}}
+            </div>
+          </div>
+    </nav>
+         <!-- Sidebar -->
+         <div id="sidebar-wrapper">
+         {{> yield region="grid"}}
+  <!--            <ul class="sidebar-nav">
+                 <li class="sidebar-brand">
+                     <a href="#">
+                         Start Bootstrap
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#">Dashboard</a>
+                 </li>
+                 <li>
+                     <a href="#">Shortcuts</a>
+                 </li>
+                 <li>
+                     <a href="#">Overview</a>
+                 </li>
+                 <li>
+                     <a href="#">Events</a>
+                 </li>
+                 <li>
+                     <a href="#">About</a>
+                 </li>
+                 <li>
+                     <a href="#">Services</a>
+                 </li>
+                 <li>
+                     <a href="#">Contact</a>
+                 </li>
+             </ul> -->
+         </div>
+         <!-- /#sidebar-wrapper -->
+
+         <!-- Page Content -->
+         <div id="page-content-wrapper">
+             <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <!-- <a class="btn btn-fab btn-raised rl-action" id="menu-toggle">+</a> -->
+                         <!-- <a href="#menu-toggle" class="btn btn-sm" >Toggle Menu</a> -->
+                         {{> yield}}
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- /#page-content-wrapper -->
+
+     </div>
+     <!-- /#wrapper -->
+
+</template>

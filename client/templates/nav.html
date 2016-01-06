@@ -1,0 +1,47 @@
+<template name="topnav">
+  <ul class="nav navbar-nav navbar-right">
+    <!-- <li><a href="#">DASHBOARD</a></li> -->
+    <li><a href="{{pathFor 'caselist'}}">GRID</a></li>
+    <!-- <li><a href="{{pathFor 'caselist'}}">PROJECTS</a></li> -->
+    <li><a href="{{pathFor 'quoteList'}}">SALES</a></li>
+    <!-- <li><a href="/sales/quote">PURCHASING</a></li> -->
+    <li><a href="/finance/dashboard">FINANCE</a></li>
+    <li class="dropdown">
+      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">MGMT<b class="caret"></b></a>
+      <ul class="dropdown-menu">
+      <li><a href="/backups">Backups</a></li>
+      <li><a href="{{pathFor 'clientlist'}}">List Clients</a></li>
+      <li><a href="{{pathFor 'addNewClient'}}">Add Client</a></li>
+      <li><a href="{{pathFor 'adminMain'}}">Admin</a></li>
+<!--             <li><a href="{{pathFor 'addNewCase2'}}">Add Case</a></li> -->
+      </ul>
+    </li>
+  </ul>
+<!--   <form class="navbar-form navbar-right">
+    <input type="text" class="form-control" placeholder="Search...">
+  </form> -->
+</template>
+
+
+<!-- <template name="sidebar">
+  <ul class="nav nav-sidebar">
+    <li><a href="{{pathFor 'grid'}}">View Grid</a></li>
+    <li><a href="{{pathFor 'clientlist'}}">List Clients</a></li>
+    <li><a href="{{pathFor 'addNewClient'}}">Add Client</a></li>
+    <li><a href="{{pathFor 'caselist'}}">List Cases</a></li>
+    <li><a href="{{pathFor 'addNewCase2'}}">Add Case</a></li>
+    <li><a href="{{pathFor 'docpage'}}">Documentation</a></li>
+  </ul>
+  <ul class="nav nav-sidebar">
+    
+    <li><a href="">Managed Print</a></li>
+    <li><a href="">Billing</a></li>
+    <li><a href="">Reports</a></li>
+    <li><a href="">More navigation</a></li>
+  </ul>
+  <ul class="nav nav-sidebar">
+    <li><a href="">Nav item again</a></li>
+    <li><a href="">One more nav</a></li>
+    <li><a href="">Another nav item</a></li>
+  </ul>
+</template> -->
